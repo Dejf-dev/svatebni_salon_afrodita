@@ -2,10 +2,10 @@ import { Link } from 'react-router-dom'
 import ArchImage from '../components/ArchImage.jsx'
 
 const categories = [
-  { title: 'Svatební šaty', img: '/images/category-wedding-dress.jpg', slug: 'svatebni-saty' },
-  { title: 'Společenské šaty', img: '/images/category-evening-dress.jpg', slug: 'spolecenske-saty' },
-  { title: 'Pánské obleky', img: '/images/category-suit.jpg', slug: 'panske-obleky' },
-  { title: 'Snubní prsteny', img: '/images/category-rings.jpg', slug: 'snubni-prsteny' },
+  { title: 'Svatební šaty', img: `${import.meta.env.BASE_URL}/images/category-wedding-dress.jpg`, slug: 'svatebni-saty' },
+  { title: 'Společenské šaty', img: `${import.meta.env.BASE_URL}/images/category-evening-dress.jpg`, slug: 'spolecenske-saty' },
+  { title: 'Pánské obleky', img: `${import.meta.env.BASE_URL}/images/category-suit.jpg`, slug: 'panske-obleky' },
+  { title: 'Snubní prsteny', img: `${import.meta.env.BASE_URL}/images/category-rings.jpg`, slug: 'snubni-prsteny' },
 ]
 
 export default function Home() {
@@ -13,7 +13,7 @@ export default function Home() {
     <>
       <section
         className="hero"
-        style={{ backgroundImage: "url('/images/hero-couple.jpg')" }}
+        style={{ backgroundImage: `url('${import.meta.env.BASE_URL}/images/hero-couple.jpg')` }}
       >
         <div className="hero-text">
           <h3>Svatební salón</h3>
@@ -46,7 +46,7 @@ export default function Home() {
             {categories.map((c) => (
               <Link
                 key={c.title}
-                to={`/sluzby#${c.slug}`}
+                to={`/sluzby#{c.slug}`}
                 className="category-item"
               >
                 <ArchImage src={c.img} alt={c.title} />

@@ -15,7 +15,7 @@ export default function Header() {
     <header className="site-header">
       <div className="container">
         <NavLink to="/" className="brand" onClick={() => setOpen(false)}>
-          <img src="/images/logo.png" alt="Svatební salón Afrodita" />
+          <img src={`${import.meta.env.BASE_URL}/images/logo.png`} alt="Svatební salón Afrodita" />
         </NavLink>
 
         <button

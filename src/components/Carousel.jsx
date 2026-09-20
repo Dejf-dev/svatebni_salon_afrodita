@@ -30,7 +30,7 @@ export default function Carousel({ items }) {
           </button>
         )}
 
-        <img src={current.src} alt={current.alt || ''} loading="lazy" />
+        <img src={`${import.meta.env.BASE_URL}/${current.src}`} alt={current.alt || ''} loading="lazy" />
 
         {items.length > 1 && (
           <button
@@ -60,7 +60,7 @@ export default function Carousel({ items }) {
               onClick={() => setIndex(i)}
               aria-label={`Zobrazit fotku ${i + 1}`}
             >
-              <img src={item.src} alt="" loading="lazy" />
+              <img src={`${import.meta.env.BASE_URL}/${item.src}`} alt="" loading="lazy" />
             </button>
           ))}
         </div>
