@@ -10,7 +10,7 @@ export default function About() {
         <h1 className="align-center">O nás</h1>
 
         <div className="row">
-          <ArchImage src={`${import.meta.env.BASE_URL}/images/about-portrait.jpg`} alt="Svatební salón Afrodita" />
+          <ArchImage src={`${import.meta.env.BASE_URL}images/about-portrait.jpg`} alt="Svatební salón Afrodita" />
           <div>
             <p>
               Svatební salon a půjčovna šatů Afrodita vznikla v roce {foundedYear} a

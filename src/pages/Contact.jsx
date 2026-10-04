@@ -47,7 +47,7 @@ export default function Contact() {
               rel="noreferrer"
               className="facebook-link"
             >
-              <img src={`${import.meta.env.BASE_URL}/images/facebook-color-svgrepo-com.svg`} alt="Facebook icon" width={18} height={18} />
+              <img src={`${import.meta.env.BASE_URL}images/facebook-color-svgrepo-com.svg`} alt="Facebook icon" width={18} height={18} />
               Svatební salon Afrodita Benešov
             </a>
 
