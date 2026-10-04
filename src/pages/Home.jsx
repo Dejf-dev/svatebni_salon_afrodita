@@ -46,7 +46,7 @@ export default function Home() {
             {categories.map((c) => (
               <Link
                 key={c.title}
-                to={`/sluzby#{c.slug}`}
+                to={`/sluzby#${c.slug}`}
                 className="category-item"
               >
                 <ArchImage src={c.img} alt={c.title} />
